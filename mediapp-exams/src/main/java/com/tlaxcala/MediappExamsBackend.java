@@ -12,5 +12,6 @@ public class MediappExamsBackend {
 
     public static void main(String[] args) {
         SpringApplication.run(MediappExamsBackend.class, args);
+
     }
 }

@@ -4,6 +4,7 @@ import java.net.URI;
 import java.util.List;
 
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
@@ -19,7 +20,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import com.tlaxcala.client.MedicsClient;
 import com.tlaxcala.dto.ExamDTO;
+import com.tlaxcala.entity.Medic;
 import com.tlaxcala.model.Exam;
 import com.tlaxcala.service.IExamService;
 

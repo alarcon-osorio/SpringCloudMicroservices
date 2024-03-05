@@ -1,0 +1,17 @@
+com/tlaxcala/exception/ResponseExceptionHandler.class
+com/tlaxcala/exception/ModelNotFoundException.class
+com/tlaxcala/dto/MedicDTO.class
+com/tlaxcala/exception/CustomErrorResponse.class
+com/tlaxcala/config/CloudinaryConfig.class
+com/tlaxcala/controller/MedicController.class
+com/tlaxcala/service/impl/CRUDImpl.class
+com/tlaxcala/MediappMedics.class
+com/tlaxcala/util/CORS.class
+com/tlaxcala/config/MessageConfig.class
+com/tlaxcala/service/impl/MedicServiceImpl.class
+com/tlaxcala/repo/IMedicRepo.class
+com/tlaxcala/config/MapperConfig.class
+com/tlaxcala/model/Medic.class
+com/tlaxcala/repo/IGenericRepo.class
+com/tlaxcala/service/ICRUD.class
+com/tlaxcala/service/IMedicService.class
