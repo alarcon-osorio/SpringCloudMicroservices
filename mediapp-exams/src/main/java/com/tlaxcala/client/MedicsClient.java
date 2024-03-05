@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.tlaxcala.entity.Medic;
 
 @Component
-@FeignClient(name = "mediapp-medics" , url = "http://localhost:8080/medics")
+@FeignClient(name = "mediapp-medics")
 @RequestMapping("/medic")
 public interface MedicsClient {
 

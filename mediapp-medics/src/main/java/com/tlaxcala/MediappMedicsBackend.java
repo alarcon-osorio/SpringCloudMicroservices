@@ -8,9 +8,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @EnableDiscoveryClient
 @SpringBootApplication
 @EnableEncryptableProperties
-public class MediappBackend {
+public class MediappMedicsBackend {
 
     public static void main(String[] args) {
-        SpringApplication.run(MediappBackend.class, args);
+        SpringApplication.run(MediappMedicsBackend.class, args);
+
     }
 }
