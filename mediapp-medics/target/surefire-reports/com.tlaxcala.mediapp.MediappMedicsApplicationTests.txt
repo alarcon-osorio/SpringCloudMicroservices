@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.tlaxcala.mediapp.MediappMedicsApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.299 s - in com.tlaxcala.mediapp.MediappMedicsApplicationTests
