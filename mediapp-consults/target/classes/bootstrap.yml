@@ -1,8 +1,8 @@
 #Application Name
 spring:
   application:
-    name: mediapp-consults     # This is the name for the remote configuration file
+    name: mediapp-consults # This is the name for the remote configuration file
   cloud:
     config:
-      uri: http://localhost:8888  #where the config-service is running
+      uri: http://localhost:8888 #where the config-service is running
       fail-fast: true
