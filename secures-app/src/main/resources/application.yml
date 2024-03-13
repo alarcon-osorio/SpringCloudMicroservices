@@ -1,0 +1,21 @@
+server:
+  port: 8081
+  
+spring:
+  application:
+    name: secures-app
+  aop:
+    proxy-target-class: true
+
+logging:
+  level:
+    com.tlaxcala.securesapp.clients:
+      PostClient: DEBUG
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic

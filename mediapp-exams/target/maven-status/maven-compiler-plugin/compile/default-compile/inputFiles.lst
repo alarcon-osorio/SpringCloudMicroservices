@@ -1,0 +1,17 @@
+/Volumes/MacOS - Datos/Desarrollos/Escalab/SpringCloudMicroservices/mediapp-exams/src/main/java/com/tlaxcala/MediappExamsBackend.java
+/Volumes/MacOS - Datos/Desarrollos/Escalab/SpringCloudMicroservices/mediapp-exams/src/main/java/com/tlaxcala/exception/ModelNotFoundException.java
+/Volumes/MacOS - Datos/Desarrollos/Escalab/SpringCloudMicroservices/mediapp-exams/src/main/java/com/tlaxcala/service/ICRUD.java
+/Volumes/MacOS - Datos/Desarrollos/Escalab/SpringCloudMicroservices/mediapp-exams/src/main/java/com/tlaxcala/service/impl/ExamServiceImpl.java
+/Volumes/MacOS - Datos/Desarrollos/Escalab/SpringCloudMicroservices/mediapp-exams/src/main/java/com/tlaxcala/config/MessageConfig.java
+/Volumes/MacOS - Datos/Desarrollos/Escalab/SpringCloudMicroservices/mediapp-exams/src/main/java/com/tlaxcala/controller/ExamController.java
+/Volumes/MacOS - Datos/Desarrollos/Escalab/SpringCloudMicroservices/mediapp-exams/src/main/java/com/tlaxcala/repo/IExamRepo.java
+/Volumes/MacOS - Datos/Desarrollos/Escalab/SpringCloudMicroservices/mediapp-exams/src/main/java/com/tlaxcala/service/impl/CRUDImpl.java
+/Volumes/MacOS - Datos/Desarrollos/Escalab/SpringCloudMicroservices/mediapp-exams/src/main/java/com/tlaxcala/repo/IGenericRepo.java
+/Volumes/MacOS - Datos/Desarrollos/Escalab/SpringCloudMicroservices/mediapp-exams/src/main/java/com/tlaxcala/config/MapperConfig.java
+/Volumes/MacOS - Datos/Desarrollos/Escalab/SpringCloudMicroservices/mediapp-exams/src/main/java/com/tlaxcala/config/CloudinaryConfig.java
+/Volumes/MacOS - Datos/Desarrollos/Escalab/SpringCloudMicroservices/mediapp-exams/src/main/java/com/tlaxcala/exception/ResponseExceptionHandler.java
+/Volumes/MacOS - Datos/Desarrollos/Escalab/SpringCloudMicroservices/mediapp-exams/src/main/java/com/tlaxcala/service/IExamService.java
+/Volumes/MacOS - Datos/Desarrollos/Escalab/SpringCloudMicroservices/mediapp-exams/src/main/java/com/tlaxcala/exception/CustomErrorResponse.java
+/Volumes/MacOS - Datos/Desarrollos/Escalab/SpringCloudMicroservices/mediapp-exams/src/main/java/com/tlaxcala/dto/ExamDTO.java
+/Volumes/MacOS - Datos/Desarrollos/Escalab/SpringCloudMicroservices/mediapp-exams/src/main/java/com/tlaxcala/util/CORS.java
+/Volumes/MacOS - Datos/Desarrollos/Escalab/SpringCloudMicroservices/mediapp-exams/src/main/java/com/tlaxcala/model/Exam.java

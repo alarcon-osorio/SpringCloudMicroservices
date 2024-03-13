@@ -1,0 +1,17 @@
+com/tlaxcala/dto/ExamDTO.class
+com/tlaxcala/exception/ResponseExceptionHandler.class
+com/tlaxcala/exception/ModelNotFoundException.class
+com/tlaxcala/exception/CustomErrorResponse.class
+com/tlaxcala/config/CloudinaryConfig.class
+com/tlaxcala/service/impl/ExamServiceImpl.class
+com/tlaxcala/service/impl/CRUDImpl.class
+com/tlaxcala/util/CORS.class
+com/tlaxcala/model/Exam.class
+com/tlaxcala/config/MessageConfig.class
+com/tlaxcala/repo/IExamRepo.class
+com/tlaxcala/config/MapperConfig.class
+com/tlaxcala/repo/IGenericRepo.class
+com/tlaxcala/service/ICRUD.class
+com/tlaxcala/MediappExamsBackend.class
+com/tlaxcala/controller/ExamController.class
+com/tlaxcala/service/IExamService.class
