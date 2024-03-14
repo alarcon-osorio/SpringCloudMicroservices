@@ -1,16 +1,23 @@
 server:
-  port: 8081
+  port: 1000
   
 spring:
   application:
     name: secures-app
   aop:
     proxy-target-class: true
+  data:
+    mongodb:
+      host: localhost          # Dirección del servidor de MongoDB
+      port: 27017              # Puerto de MongoDB
+      database: secures-app     # Nombre de la base de datos
+  profiles:
+    active: dev               # Perfil activo (puede ser dev, prod, etc.)
 
 logging:
   level:
     com.tlaxcala.securesapp.clients:
-      PostClient: DEBUG
+      ConsultsClient: DEBUG
 
 feign:
   client:

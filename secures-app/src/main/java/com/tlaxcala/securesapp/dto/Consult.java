@@ -14,6 +14,6 @@ public class Consult {
     private Specialty specialty;
     private String numConsult;
     private LocalDateTime consultDate;
-    private List<ConsultDetailDTO> details;
+    private List<ConsultDetail> details;
 
 }
