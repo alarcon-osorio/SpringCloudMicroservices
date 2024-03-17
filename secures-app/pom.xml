@@ -59,6 +59,28 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- RxJava -->
+		<dependency>
+			<groupId>io.reactivex.rxjava2</groupId>
+			<artifactId>rxjava</artifactId>
+			<version>2.2.21</version> <!-- Ajusta la versión según tu necesidad -->
+		</dependency>
+
+		<!-- Apache HttpClient -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.13</version> <!-- Ajusta la versión según tu necesidad -->
+		</dependency>
+
+		<!-- Areactor -->
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-core</artifactId>
+			<version>3.4.13</version> <!-- Asegúrate de usar la versión más reciente -->
+		</dependency>
+
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
