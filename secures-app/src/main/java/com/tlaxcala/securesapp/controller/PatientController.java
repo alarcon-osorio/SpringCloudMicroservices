@@ -61,7 +61,6 @@ public class PatientController {
 
         // Construir el PatientResponse con el PatientEntity y un mensaje opcional
         String message = "Paciente obtenido correctamente"; // Mensaje por defecto
-        patientEntity.getIdPatient();
         return PatientResponse.builder()
                               .patientEntity(patientEntity)
                               .message(message)

@@ -10,11 +10,14 @@ import java.util.concurrent.CompletableFuture;
 import java.util.stream.IntStream;
 
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tlaxcala.securesapp.entity.PatientEntity;
+import com.tlaxcala.securesapp.repository.PatientRepository;
 
 import io.reactivex.Single;
 import lombok.extern.slf4j.Slf4j;
@@ -22,6 +25,15 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 @Slf4j
 public class PatientService implements InitializingBean{
+
+    @Autowired
+    private MongoTemplate mongoTemplate;
+
+    @Autowired
+    private PatientRepository patientRepository;
+
+    @Autowired
+    private CommonService commonService;
 
     /**
      * Map of Thing mocks
@@ -70,7 +82,33 @@ public class PatientService implements InitializingBean{
                     // Si la llamada es exitosa, procesar la respuesta y emitir el resultado
                     PatientEntity patientEntity = procesarRespuesta(response.body());
                     emitter.onSuccess(patientEntity);
-                    log.info("Body " + response.body());
+                    log.info("Respuesa exitosa con el Body: " + response.body());
+                    log.info("Enviando orden para guardar en base de datos MONGO");
+
+                    try{
+                        ObjectMapper mapper = new ObjectMapper();
+                        JsonNode jsonNode = mapper.readTree(response.body());
+
+                        String idPatient = jsonNode.get("idPatient").asText();
+                        log.info("Validar existencia de ID: " + idPatient);
+
+                        String resultIdPatient = patientRepository.findByIdPatient(idPatient);
+                        log.info("result consult exist ---> " + resultIdPatient);
+
+                        if (resultIdPatient == null) {
+                            //commonService.operacionAsincrona(patientEntity);
+                            insertPatient(patientEntity);
+                            log.info("Registro insertado");
+                        }else{
+                            log.info("Registro existe no se inserta");
+                        } 
+                        
+                    }catch(Exception ex){
+                        ex.printStackTrace();
+                        log.info("Exception ---> " +  ex);
+                        
+                    }
+                    
                 } else {
                     // Si hay un error, emitir un error
                     emitter.onError(new RuntimeException("Error al llamar al endpoint externo. Código de estado: " + response.statusCode()));
@@ -106,7 +144,11 @@ public class PatientService implements InitializingBean{
             ex.printStackTrace();
             log.info("Exception ---> " +  ex);
             return null;
-        }
-       
+        } 
+    }
+
+    @SuppressWarnings("null")
+    public void insertPatient(PatientEntity patientEntity) {
+        mongoTemplate.insert(patientEntity, "patients");
     }
 }
