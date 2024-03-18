@@ -25,7 +25,7 @@ public class LoginController {
     private final JwtTokenUtil jwtTokenUtil;
     private final JwtUserDetailsService userDetailsService;
 
-    @PostMapping("/login")
+    @PostMapping("/security")
     public ResponseEntity<JwtResponse> login(@RequestBody JwtRequest req) throws Exception {
         authenticate(req.getUsername(), req.getPassword());
 

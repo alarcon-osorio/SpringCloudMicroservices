@@ -50,7 +50,7 @@ public class WebSecurityConfig { // utiliza todas las configuraciones ya realiza
         httpSecurity
             .csrf(AbstractHttpConfigurer::disable) // deshabilita la protección de ataques para forms incrustados en el backend
             .authorizeHttpRequests(req -> req
-                .requestMatchers("/login").permitAll() // ruta permitida para todos los usuarios
+                .requestMatchers("/security").permitAll() // ruta permitida para todos los usuarios
                 //.requestMatchers("/patients/**").permitAll() | .authenticated()
                 .anyRequest().authenticated() // cualquier otra ruta de las no definidas le agrega el comportamiento
             )
