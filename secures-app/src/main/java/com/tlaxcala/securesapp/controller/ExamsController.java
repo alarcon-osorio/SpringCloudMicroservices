@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.tlaxcala.securesapp.clients.ExamsClient;
 import com.tlaxcala.securesapp.dto.Exams;
+import com.tlaxcala.securesapp.service.CommonService;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -20,6 +21,9 @@ public class ExamsController {
     @Autowired
     ExamsClient examsClient;
 
+    @Autowired
+    CommonService commonService;
+
     @GetMapping
     public List<Exams> examsList(){
         log.info("----- Consumiendo el servicio externo exams -----");
@@ -27,5 +31,6 @@ public class ExamsController {
         List<Exams> exams = examsClient.getExams();
         return exams;
     }
+
     
 }

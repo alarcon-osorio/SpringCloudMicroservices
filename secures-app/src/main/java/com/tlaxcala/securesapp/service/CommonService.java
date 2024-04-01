@@ -26,9 +26,9 @@ public class CommonService {
         Executors.newCachedThreadPool().submit(() -> {
             try {
                 // Simular una operación que tarda más de 30 segundos
-                Thread.sleep(30000);
+                Thread.sleep(60000);
                 
-                log.info("Registro insertado por common despues de 30Segs");
+                log.info("Registro insertado por common despues de 60Segs");
                 mongoTemplate.insert(object);
                 // Completa el futuro con el resultado exitoso
                 future.complete(new Object());

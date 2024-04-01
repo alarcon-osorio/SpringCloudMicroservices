@@ -1,0 +1,16 @@
+com/tlaxcala/model/Specialty.class
+com/tlaxcala/exception/ResponseExceptionHandler.class
+com/tlaxcala/exception/ModelNotFoundException.class
+com/tlaxcala/exception/CustomErrorResponse.class
+com/tlaxcala/service/impl/CRUDImpl.class
+com/tlaxcala/dto/SpecialtyDTO.class
+com/tlaxcala/util/CORS.class
+com/tlaxcala/service/ISpecialtyService.class
+com/tlaxcala/config/MessageConfig.class
+com/tlaxcala/service/impl/SpecialtyServiceImpl.class
+com/tlaxcala/repo/ISpecialtyRepo.class
+com/tlaxcala/controller/SpecialtyController.class
+com/tlaxcala/config/MapperConfig.class
+com/tlaxcala/repo/IGenericRepo.class
+com/tlaxcala/service/ICRUD.class
+com/tlaxcala/MediappSpecialtiesBackend.class

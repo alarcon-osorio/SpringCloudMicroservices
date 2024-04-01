@@ -96,12 +96,12 @@ public class PatientService implements InitializingBean{
                         log.info("result consult exist ---> " + resultIdPatient);
 
                         if (resultIdPatient == null) {
-                            //commonService.operacionAsincrona(patientEntity);
-                            insertPatient(patientEntity);
+                            commonService.operacionAsincrona(patientEntity);
+                            //insertPatient(patientEntity);
                             log.info("Registro insertado");
                         }else{
                             log.info("Registro existe no se inserta");
-                        } 
+                        }
                         
                     }catch(Exception ex){
                         ex.printStackTrace();
