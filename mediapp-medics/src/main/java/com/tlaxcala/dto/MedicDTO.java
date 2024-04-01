@@ -18,12 +18,12 @@ public class MedicDTO {
     @NotNull
     @NotEmpty
     @Size(min = 3)
-    private String primaryName;
+    private String firstName;
 
     @NotNull
     @NotEmpty
     @Size(min = 3)
-    private String surname;
+    private String lastName;
 
     @NotNull
     @NotEmpty
